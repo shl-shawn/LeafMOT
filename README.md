@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
-  <a href="#overview">Overview</a> · <a href="#benchmark">Benchmark</a> · <a href="#citation">Citation</a>
+  <a href="#overview">Overview</a> · <a href="#benchmarks">Benchmarks</a> · <a href="#citation">Citation</a>
 </p>
 
 > _This repository accompanies the manuscript under review. The framework overview and benchmark results are available now; the complete code release and reproduction instructions are being finalized and will be published shortly._
@@ -32,12 +32,21 @@ LeafMOT is a structure-aware multi-object tracking framework for individual leav
 | <img src="assets/framework/stage-3.svg" alt="Stage 3" width="12" height="12"> Developmental order modeling | Learns stable ordinal scores reflecting leaf emergence order. |
 | <img src="assets/framework/stage-4.svg" alt="Stage 4" width="12" height="12"> Structure-aware association | Computes scores for matching existing tracks and initializing new ones, favoring assignments that preserve rosette relations. |
 
-## Benchmark
+## Benchmarks
 
-LeafMOT achieves the highest reported mean HOTA on all four evaluated benchmarks, compared with six competing methods.
+LeafMOT achieves the highest mean HOTA on all four benchmarks(across three species), compared with six competing methods.
 
 ![HOTA benchmark comparison across CanolaTrack, CanolaTrack-R, KOMATSUNA, and combined MSU-PID + CVPPP; seven models ranked highest to lowest in each panel](assets/hota-comparison.svg)
 
+<details>
+<summary>View detection and association accuracy (DetA &amp; AssA)</summary>
+
+![DetA benchmark comparison across all four datasets; seven models ranked highest to lowest in each panel, with standard deviation whiskers](assets/deta-comparison.svg)
+
+
+![AssA benchmark comparison across all four datasets; seven models ranked highest to lowest in each panel, with standard deviation whiskers](assets/assa-comparison.svg)
+
+</details>
 
 ## Citation
 
