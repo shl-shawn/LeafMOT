@@ -17,7 +17,7 @@
   <a href="#overview">Overview</a> · <a href="#benchmarks">Benchmarks</a> · <a href="#method">Method</a> · <a href="#citation">Citation</a>
 </p>
 
-> _This repository accompanies the manuscript under review. The overview and benchmark figure are available now; the complete code release and reproduction instructions are being finalized and will be published shortly._
+> _This repository accompanies the manuscript under review. The framework overview and benchmark results are available now; the complete code release and reproduction instructions are being finalized and will be published shortly._
 
 ## Overview
 
@@ -31,18 +31,25 @@ LeafMOT achieves the highest reported mean HOTA on all four evaluated benchmarks
 
 ## Method
 
-| Component | Role in tracking |
+LeafMOT connects four complementary stages, from depth-guided leaf representations to structure-aware identity association.
+
+<p align="center">
+  <a href="assets/framework.svg">
+    <img src="assets/framework/framework.svg" alt="LeafMOT framework: depth-guided proposal encoding, rosette topology encoding, developmental order modeling, and structure-aware association" width="720">
+  </a>
+</p>
+
+
+| Stage | Role in tracking |
 |:--|:--|
-| Depth-guided encoding | Monocular depth from Depth Anything 3 and DFormer RGB-depth fusion enrich leaf proposal features. |
-| Rosette topology | Plant-relative geometry and sparse neighborhood relations place each leaf in the context of the whole plant. |
-| Developmental order | An ordinal cue provides temporal context for leaf emergence and identity. |
-| Structure-aware association | Online track memory and structural cues guide matching across frames. |
-
-
+| <img src="assets/framework/stage-1.svg" alt="Stage 1" width="12" height="12"> Depth-guided proposal encoding | Fuses RGB with estimated depth to embed each leaf proposal. |
+| <img src="assets/framework/stage-2.svg" alt="Stage 2" width="12" height="12"> Rosette topology encoding | Represents leaves relative to the plant, models pairwise relations, and aggregates sparse neighbor information. |
+| <img src="assets/framework/stage-3.svg" alt="Stage 3" width="12" height="12"> Developmental order modeling | Learns stable ordinal scores reflecting leaf emergence order. |
+| <img src="assets/framework/stage-4.svg" alt="Stage 4" width="12" height="12"> Structure-aware association | Computes scores for matching existing tracks and initializing new ones, favoring assignments that preserve rosette relations. |
 
 ## Citation
 
-If you use CanolaTrack, CanolaTrack-R, or LeafMOT in your research, please cite the following papers. 
+If you use CanolaTrack, CanolaTrack-R, or LeafMOT in your research, please cite the following papers.
 
 ```bibtex
 @article{liu2026leafmot,
