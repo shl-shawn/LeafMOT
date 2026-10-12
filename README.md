@@ -1,6 +1,7 @@
 <div align="center">
-  <img src="assets/leafmot-banner.svg" alt="LeafMOT - Structural Multi-Object Tracking of Individual Leaves in Rosette Plants" width="100%">
+  <img src="assets/leafmot-banner.svg" alt="LeafMOT - Structural Multi-Object Tracking of Individual Leaves in Rosette Plants" width="80%">
 </div>
+
 
 <div align="center">
   <img alt="Manuscript under review" src="https://img.shields.io/badge/Manuscript-Under_review-b23a48?style=flat-square">
@@ -13,7 +14,7 @@
 </p>
 
 <p align="center">
-  <a href="#overview">Overview</a> · <a href="#benchmarks">Benchmarks</a> · <a href="#method">Method</a> · <a href="#release-status">Release status</a> · <a href="#citation">Citation</a>
+  <a href="#overview">Overview</a> · <a href="#benchmarks">Benchmarks</a> · <a href="#method">Method</a> · <a href="#citation">Citation</a>
 </p>
 
 ## Overview
@@ -24,9 +25,9 @@ LeafMOT is a structure-aware multi-object tracking framework for individual leav
 
 ## Benchmarks
 
-![HOTA benchmark comparison across CanolaTrack, CanolaTrack-R, KOMATSUNA, and combined MSU-PID + CVPPP; seven models ranked highest to lowest in each panel](assets/hota-comparison.svg)
+LeafMOT achieves the highest reported mean HOTA on all four evaluated benchmarks, compared with six competing methods.
 
-LeafMOT achieves the highest reported mean HOTA on all four evaluated benchmarks, compared with six competing methods. Higher HOTA is better.
+![HOTA benchmark comparison across CanolaTrack, CanolaTrack-R, KOMATSUNA, and combined MSU-PID + CVPPP; seven models ranked highest to lowest in each panel](assets/hota-comparison.svg)
 
 ## Method
 
@@ -37,12 +38,6 @@ LeafMOT achieves the highest reported mean HOTA on all four evaluated benchmarks
 | Developmental order | An ordinal cue provides temporal context for leaf emergence and identity. |
 | Structure-aware association | Online track memory and structural cues guide matching across frames. |
 
-
-## Release status
-
-This is a **README-first research release** so readers can examine the method and its reported results before the code package is complete.
-
-The reproducibility release is being prepared to include the implementation, environment setup, data and detector-proposal preparation, depth preprocessing, training and inference commands, evaluation, and ablations. Please refer to the submitted manuscript for the experimental protocol.
 
 
 ## Citation
