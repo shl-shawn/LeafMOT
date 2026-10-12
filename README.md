@@ -17,11 +17,11 @@
   <a href="#overview">Overview</a> · <a href="#benchmarks">Benchmarks</a> · <a href="#method">Method</a> · <a href="#citation">Citation</a>
 </p>
 
+> _This repository accompanies the manuscript under review. The overview and benchmark figure are available now; the complete code release and reproduction instructions are being finalized and will be published shortly._
+
 ## Overview
 
 LeafMOT is a structure-aware multi-object tracking framework for individual leaves in longitudinal, top-view images of rosette plants. Rather than associating leaves by appearance alone, it combines RGB features with monocular depth, plant-relative geometry, developmental order, and online track memory to maintain identities through growth, occlusion, and in-plane rotation.
-
-> This repository accompanies the manuscript under review. The overview and benchmark figure are available now; the complete code release and reproduction instructions are being finalized and will be published shortly.
 
 ## Benchmarks
 
