@@ -33,11 +33,8 @@ LeafMOT achieves the highest reported mean HOTA on all four evaluated benchmarks
 
 LeafMOT connects four complementary stages, from depth-guided leaf representations to structure-aware identity association.
 
-<p align="center">
-  <a href="assets/framework.svg">
-    <img src="assets/framework/framework.svg" alt="LeafMOT framework: depth-guided proposal encoding, rosette topology encoding, developmental order modeling, and structure-aware association" width="720">
-  </a>
-</p>
+![LeafMOT framework: depth-guided proposal encoding, rosette topology encoding, developmental order modeling, and structure-aware association](assets/framework/framework.svg)
+
 
 
 | Stage | Role in tracking |
