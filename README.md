@@ -26,7 +26,7 @@ LeafMOT is a structure-aware multi-object tracking framework for individual leav
 
 ![HOTA benchmark comparison across CanolaTrack, CanolaTrack-R, KOMATSUNA, and combined MSU-PID + CVPPP; seven models ranked highest to lowest in each panel](assets/hota-comparison.svg)
 
-LeafMOT achieves the highest reported mean HOTA on all four evaluated benchmarks, compared with six competing methods. Results are reported means over three random runs (Tables 2-4; standard deviations in Appendix Tables C.1-C.3). Higher HOTA is better.
+LeafMOT achieves the highest reported mean HOTA on all four evaluated benchmarks, compared with six competing methods. Higher HOTA is better.
 
 ## Method
 
