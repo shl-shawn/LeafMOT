@@ -17,7 +17,7 @@
   <a href="#overview">Overview</a> · <a href="#benchmarks">Benchmarks</a> · <a href="#citation">Citation</a>
 </p>
 
-> _This repository accompanies the manuscript under review. The framework overview and benchmark results are available now; the complete code release and reproduction instructions are being finalized and will be published shortly._
+> _This repository accompanies the manuscript under review. The complete code release and reproduction instructions will be published shortly._
 
 ## Overview
 
