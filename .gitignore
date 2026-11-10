@@ -1,0 +1,46 @@
+# Python and local environments
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+build/
+dist/
+.pytest_cache/
+.DS_Store
+
+# Local configurations, datasets, dependencies and experiment outputs
+/configs/local.yaml
+/configs/local-infer.yaml
+/data/
+/datasets/
+/third_party/
+/exps/
+/outputs/
+/checkpoints/
+*.log
+
+# Model weights and generated depth arrays stay local
+*.pth
+*.pth.tar
+*.pt
+*.ckpt
+*.npy
+*.npz
+
+# Excluded from GitHub
+*.pth
+*.pth.tar
+/Exp2/
+/visualization/
+/visualizations/
+/scripts/visualize_*.py
+/scripts/visualization/
+/exps/
+/outputs/
+/data/
+/datasets/
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store

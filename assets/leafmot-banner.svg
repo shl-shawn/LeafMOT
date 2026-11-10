@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">LeafMOT</title>
+  <desc id="desc">Structural multi-object tracking of individual leaves in rosette plants</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071c1b"/>
+      <stop offset="0.52" stop-color="#123c34"/>
+      <stop offset="1" stop-color="#1b5b46"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#91d6a8" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#91d6a8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#b7e4c7"/>
+      <stop offset="1" stop-color="#52b788"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#00110d" flood-opacity="0.42"/>
+    </filter>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0H0V36" fill="none" stroke="#d8f3dc" stroke-opacity="0.045"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="360" rx="28" fill="url(#bg)"/>
+  <rect width="1200" height="360" rx="28" fill="url(#grid)"/>
+  <circle cx="930" cy="178" r="245" fill="url(#glow)"/>
+  <path d="M0 307C237 253 360 348 578 296S966 221 1200 278V360H0Z" fill="#071c1b" opacity="0.36"/>
+
+  <g transform="translate(78 82)">
+    <rect x="0" y="0" width="8" height="190" rx="4" fill="#74c69d"/>
+    <text x="38" y="78" fill="#ffffff" font-family="Inter, ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="82" font-weight="760" letter-spacing="-2">LeafMOT</text>
+    <text x="42" y="124" fill="#b7e4c7" font-family="Inter, ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="21" font-weight="600" letter-spacing="3.1">STRUCTURAL MULTI-OBJECT TRACKING</text>
+    <text x="42" y="162" fill="#e8f5e9" opacity="0.84" font-family="Inter, ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="19">Individual leaves · Longitudinal growth · Rosette topology</text>
+  </g>
+
+  <g transform="translate(936 181)" filter="url(#shadow)">
+    <g fill="url(#leaf)" stroke="#d8f3dc" stroke-width="2">
+      <ellipse cx="0" cy="-82" rx="30" ry="73"/>
+      <ellipse cx="0" cy="82" rx="30" ry="73" transform="rotate(180)"/>
+      <ellipse cx="-78" cy="-26" rx="29" ry="70" transform="rotate(-68 -78 -26)"/>
+      <ellipse cx="78" cy="-26" rx="29" ry="70" transform="rotate(68 78 -26)"/>
+      <ellipse cx="-49" cy="69" rx="27" ry="63" transform="rotate(-145 -49 69)"/>
+      <ellipse cx="49" cy="69" rx="27" ry="63" transform="rotate(145 49 69)"/>
+    </g>
+    <g fill="none" stroke="#143d32" stroke-opacity="0.8" stroke-width="2.2">
+      <path d="M0 0V-129M0 0V129M0 0L-137-48M0 0L137-48M0 0L-87 117M0 0L87 117"/>
+    </g>
+    <circle r="30" fill="#1f6f55" stroke="#d8f3dc" stroke-width="3"/>
+    <g fill="#f4d35e" stroke="#071c1b" stroke-width="3">
+      <circle cx="0" cy="-104" r="8"/>
+      <circle cx="100" cy="-35" r="8"/>
+      <circle cx="62" cy="84" r="8"/>
+      <circle cx="-62" cy="84" r="8"/>
+      <circle cx="-100" cy="-35" r="8"/>
+      <circle cx="0" cy="0" r="9"/>
+    </g>
+  </g>
+
+  <g font-family="Inter, ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#d8f3dc">
+    <rect x="796" y="28" width="104" height="30" rx="15" fill="#2d6a4f" stroke="#74c69d" stroke-opacity="0.5"/>
+    <text x="848" y="48" text-anchor="middle">RGB + DEPTH</text>
+    <rect x="1002" y="290" width="118" height="30" rx="15" fill="#2d6a4f" stroke="#74c69d" stroke-opacity="0.5"/>
+    <text x="1061" y="310" text-anchor="middle">TRACK MEMORY</text>
+  </g>
+</svg>

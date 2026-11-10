@@ -1,0 +1,10 @@
+torch==2.5.1
+torchvision==0.20.1
+numpy>=1.24.0
+PyYAML>=6.0
+opencv-python>=4.8.0
+Pillow>=10.0.0
+tqdm>=4.66.0
+scipy>=1.10.0
+matplotlib>=3.7.0
+protobuf>=3.20
