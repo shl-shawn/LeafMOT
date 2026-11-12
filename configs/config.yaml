@@ -1,11 +1,11 @@
 output:
-  dir: /mnt/nfsshare/home/liu21/LeafMOT/output
+  dir: ./output
   save_every: 10
   eval_every: 10
 data:
-  root: /mnt/nfsshare/home/liu21/LeafTrackNetv2/dataset_supervised_individual/CanolaTrack
-  train_proposal_json: /mnt/nfsshare/home/liu21/LeafTrackNetv2/YOLO/runs/detect/V2/Exp2/CanolaTrack2_yolo12x_run1/proposals/motrv2_det_db_train.json
-  val_proposal_json: /mnt/nfsshare/home/liu21/LeafTrackNetv2/YOLO/runs/detect/V2/Exp2/CanolaTrack2_yolo12x_run1/proposals/motrv2_det_db_val.json
+  root: {PATH}
+  train_proposal_json: {PATH}
+  val_proposal_json: {PATH}
   train_split: train
   val_split: val
   image_exts:
@@ -31,7 +31,7 @@ data:
   depth_roi_min_fraction: 0.001
   depth_roi_max_fraction: 0.8
 model:
-  encoder_pretrained_path: /mnt/nfsshare/home/liu21/LeafMOT/LeafMOT/pretrained/DFormer_Tiny.pth.tar
+  encoder_pretrained_path: {PATH/DFormer_Tiny.pth.tar}
   encoder_out_channels: 256
   encoder_drop_path_rate: 0.1
   token_dim: 256
@@ -63,7 +63,7 @@ loss:
   neg_iou_thresh: 0.3
   lambda_leaf: 1.0
   lambda_box: 1.0
-  lambda_box_giou: 0.0
+  lambda_box_giou: 0.5
   lambda_assoc: 1.0
   lambda_dev: 1.0
   lambda_dev_sep: 1.0
