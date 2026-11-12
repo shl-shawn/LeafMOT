@@ -3,8 +3,8 @@
   <h2>Structural Multi-Object Tracking of Individual Leaves in Rosette Plants</h2>
 
   <p>
-    Shanghua Liu &nbsp;·&nbsp;
-    Majharulislam Babor &nbsp;·&nbsp;
+    Shanghua Liu,
+    Majharulislam Babor,
     Marina M.-C. Höhne
   </p>
 
