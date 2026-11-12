@@ -2,6 +2,16 @@
 
   <h2>Structural Multi-Object Tracking of Individual Leaves in Rosette Plants</h2>
 
+  <p>
+    Shanghua Liu &nbsp;·&nbsp;
+    Majharulislam Babor &nbsp;·&nbsp;
+    Marina M.-C. Höhne
+  </p>
+
+  <p>
+    Leibniz Institute for Agricultural Engineering and Bioeconomy, Germany
+  </p>
+  
 </div>
 
 
